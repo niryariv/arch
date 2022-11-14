@@ -48,7 +48,8 @@
     function onEachFeature(feature, layer){
         var out = [];
         layer.bindPopup(
-            '<p dir="rtl">' + feature.properties['q'] + '</p>'
+    
+            '<p dir="rtl"><b>' + feature.properties['c'] + '</b><br />' + feature.properties['q'] + '</p>'
         );        
     }
 
