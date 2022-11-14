@@ -23,6 +23,10 @@
             height: 100%;
             width: 100vw;
         }
+        .info {
+            text-align: right;
+            direction: rtl;
+        }
     </style>
 </head>
 
@@ -49,7 +53,11 @@
         var out = [];
         layer.bindPopup(
     
-            '<p dir="rtl"><b>' + feature.properties['c'] + '</b><br />' + feature.properties['q'] + '</p>'
+            '<p class="info"><b>' + feature.properties['ata_shem'] + '</b>   '
+                + '(<i>' + feature.properties['status'] + '</i>)<br />' 
+                + feature.properties['atar_heb_d'] 
+                + '<br />'
+                + '</p>'
         );        
     }
 
