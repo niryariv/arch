@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GeoJSON = Test</title>
+	<title>אתרים ארכאולוגים</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +48,7 @@
     function onEachFeature(feature, layer){
         var out = [];
         layer.bindPopup(
-            feature.properties['q']
+            '<p dir="rtl">' + feature.properties['q'] + '</p>'
         );        
     }
 
