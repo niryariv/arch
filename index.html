@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>אתרים ארכאולוגים</title>
+	<title>2022 אתרים ארכאולוגים</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
         crossorigin=""/>   
     
     <link rel="icon" href="/icon-512.png" sizes="512x512" type="image/png">
+
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -55,9 +56,8 @@
     }).addTo(map);
   
     // Add location control to get the user's current location
-    map.locate({setView: true, maxZoom: 16});
     L.control.locate().addTo(map);
-  
+    
     // Add map scale
     L.control.scale().addTo(map);
 
